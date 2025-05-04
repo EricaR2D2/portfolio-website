@@ -1,0 +1,92 @@
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Apply animations to elements */
+.fade-in {
+  animation: fadeIn 1s ease forwards;
+}
+
+.slide-in-left {
+  animation: slideInLeft 1s ease forwards;
+}
+
+.slide-in-right {
+  animation: slideInRight 1s ease forwards;
+}
+
+/* Staggered animations for multiple elements */
+.stagger-animation > * {
+  opacity: 0;
+}
+
+.stagger-animation > *:nth-child(1) {
+  animation: fadeIn 0.5s ease forwards 0.1s;
+}
+
+.stagger-animation > *:nth-child(2) {
+  animation: fadeIn 0.5s ease forwards 0.2s;
+}
+
+.stagger-animation > *:nth-child(3) {
+  animation: fadeIn 0.5s ease forwards 0.3s;
+}
+
+.stagger-animation > *:nth-child(4) {
+  animation: fadeIn 0.5s ease forwards 0.4s;
+}
+
+.stagger-animation > *:nth-child(5) {
+  animation: fadeIn 0.5s ease forwards 0.5s;
+}
+
+/* Typing animation for hero text */
+.typing-animation {
+  overflow: hidden;
+  border-right: 3px solid var(--primary);
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: var(--primary) }
+}
