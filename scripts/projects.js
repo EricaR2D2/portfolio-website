@@ -12,6 +12,12 @@ document.addEventListener('DOMContentLoaded', function() {
             // Clear existing content
             projectGallery.innerHTML = '';
 
+            // If there are no projects, show a placeholder message
+            if (projects.length === 0) {
+                projectGallery.innerHTML = '<p>Projects coming soon...</p>';
+                return;
+            }
+
             // Add projects to the gallery
             projects.forEach(project => {
                 const projectCard = document.createElement('div');
