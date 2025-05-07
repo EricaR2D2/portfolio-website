@@ -146,11 +146,12 @@ nav a.blog-link::after {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   padding: 0 10%;
   background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7)), url('../assets/images/hero-bg.jpg');
   background-size: cover;
   background-position: center;
+  text-align: center;
 }
 
 #hero h1 {
@@ -162,7 +163,9 @@ nav a.blog-link::after {
 #hero p {
   font-size: 1.5rem;
   margin-bottom: var(--spacing-lg);
-  max-width: 600px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .cta-buttons {
