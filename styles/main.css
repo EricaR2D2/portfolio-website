@@ -163,7 +163,7 @@ nav a.blog-link::after {
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('../assets/images/Header Background.jpg') no-repeat center center;
+  background: url('../assets/images/HeaderBackground.jpg') no-repeat center center;
   background-size: cover;
   opacity: 0.15;
   z-index: -1;
