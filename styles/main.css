@@ -150,13 +150,22 @@ nav a.blog-link::after {
   padding: 0 10%;
   position: relative;
   background-color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+#hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-image: url('../assets/images/HeaderBackground.jpg');
   background-size: cover;
   background-position: center;
-  background-blend-mode: soft-light;
-  background-attachment: fixed;
-  text-align: center;
-  overflow: hidden;
+  opacity: 0.2;
+  z-index: -1;
 }
 
 #hero h1 {
