@@ -124,6 +124,22 @@ nav a:hover::after {
   width: 100%;
 }
 
+nav a.blog-link {
+  color: var(--primary);
+  font-weight: 500;
+  font-size: 0.95rem;
+  opacity: 0.85;
+  transition: opacity 0.3s ease;
+}
+
+nav a.blog-link:hover {
+  opacity: 1;
+}
+
+nav a.blog-link::after {
+  background-color: var(--accent);
+}
+
 /* Hero Section */
 #hero {
   height: 90vh;
