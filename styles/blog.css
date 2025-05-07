@@ -147,16 +147,23 @@
     margin: 30px 0;
 }
 
+.blog-post-content hr {
+    margin: 40px 0;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
     .blog-grid {
         grid-template-columns: 1fr;
     }
-    
+
     #blog-header {
         padding: 60px 0;
     }
-    
+
     #blog-header h1 {
         font-size: 2rem;
     }
