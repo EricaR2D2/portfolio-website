@@ -149,24 +149,14 @@ nav a.blog-link::after {
   align-items: center;
   padding: 0 10%;
   position: relative;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7)), url('../assets/images/hero-bg.jpg');
+  background-color: white;
+  background-image: url('../assets/images/HeaderBackground.jpg');
   background-size: cover;
   background-position: center;
+  background-blend-mode: soft-light;
+  background-attachment: fixed;
   text-align: center;
   overflow: hidden;
-}
-
-#hero::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url('../assets/images/HeaderBackground.jpg') no-repeat center center;
-  background-size: cover;
-  opacity: 0.2;
-  z-index: -1;
 }
 
 #hero h1 {
