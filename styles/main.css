@@ -148,10 +148,25 @@ nav a.blog-link::after {
   justify-content: center;
   align-items: center;
   padding: 0 10%;
+  position: relative;
   background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7)), url('../assets/images/hero-bg.jpg');
   background-size: cover;
   background-position: center;
   text-align: center;
+  overflow: hidden;
+}
+
+#hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('../assets/images/Header Background.jpg') no-repeat center center;
+  background-size: cover;
+  opacity: 0.15;
+  z-index: -1;
 }
 
 #hero h1 {
